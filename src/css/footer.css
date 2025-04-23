@@ -31,13 +31,6 @@
 }
 
 .footer-soc-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(251, 251, 251, 0.1);
-  border-radius: 10px;
-  width: 34px;
-  height: 34px;
 }
 
 .footer-soc-item:hover .footer-soc-icon,
@@ -47,6 +40,12 @@
 
 .footer-soc-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  width: 34px;
+  height: 34px;
 }
 
 .footer-soc-icon {
@@ -162,7 +161,7 @@
     margin-bottom: unset;
   }
 
-  .footer-soc-item {
+  .footer-soc-link {
     width: 36px;
     height: 36px;
   }
