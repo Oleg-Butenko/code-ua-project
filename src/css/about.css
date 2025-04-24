@@ -41,6 +41,10 @@ margin-bottom: 28px;
 }
 
 .about-btn {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;;
 min-width: 160px;
 border-radius: 16px;
 height: 48px;
@@ -51,7 +55,16 @@ font-size: 14px;
 line-height: 1.29;
 text-align: center;
 color: #fbfbfb;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.about-btn:hover,
+.about-btn:focus {
+background-color: #1f3cd4;   
+}
+
 
 
 .about-container {
@@ -100,8 +113,8 @@ margin-top: 40px;
     gap: 40px;
 }
 
-.about-img {
-  width: 100%;  
+.about-image {
+  max-width: 100%;  
 }
 
 }
@@ -124,10 +137,7 @@ margin-top: 40px;
     height: 532px;
 }
 
-.about-img {
 
-
-}
 
 .about-title {
 font-weight: 600;
