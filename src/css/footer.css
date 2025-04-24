@@ -2,19 +2,10 @@
   padding-bottom: 20px;
 }
 
-.footer .container {
-}
-
 .footer-wrap {
   background-color: #0c0c0c;
   border-radius: 30px;
   padding: 40px 28px 28px;
-}
-
-.footer-top-wrap {
-}
-
-.footer-soc-wrap {
 }
 
 .footer-logo {
@@ -28,9 +19,6 @@
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-}
-
-.footer-soc-item {
 }
 
 .footer-soc-item:hover .footer-soc-icon,
@@ -101,9 +89,6 @@
   margin-bottom: 24px;
 }
 
-.footer-navigation {
-}
-
 .footer-navigation-list {
   display: flex;
   gap: 8px 16px;
@@ -111,16 +96,13 @@
   max-width: 147px;
 }
 
-.footer-navigations-item {
-}
-
-.footer-navigations-link {
+.footer-navigation-link {
   position: relative;
   display: block;
 }
 
-.footer-navigations-link::after,
-.footer-navigations-link::after {
+.footer-navigation-link::after,
+.footer-navigation-link::after {
   content: '';
   width: 8px;
   height: 8px;
@@ -135,8 +117,8 @@
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-navigations-link:hover::after,
-.footer-navigations-link:focus::after {
+.footer-navigation-link:hover::after,
+.footer-navigation-link:focus::after {
   transform: translateX(-50%) scale(1);
   opacity: 1;
   bottom: -10px;
@@ -161,9 +143,6 @@
 .footer-bottom-list {
   display: flex;
   gap: 20px;
-}
-
-.footer-bottom-item {
 }
 
 .footer-bottom-link {
@@ -238,9 +217,6 @@
   .footer-navigation-list {
     max-width: unset;
     gap: 19px;
-  }
-
-  .footer-navigations-link {
   }
 
   .footer-navigation-text {
