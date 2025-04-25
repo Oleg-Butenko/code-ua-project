@@ -1,13 +1,11 @@
 .about {
   padding-bottom: 60px;
-  margin: 0 auto;
 }
 
 .about-wrapper {
   padding: 40px 20px;
   background-color: #f3f3f3;
   border-radius: 30px;
-  /* max-width: 375px; */
 }
 
 .about-title {
@@ -76,7 +74,6 @@
   }
 
   .about-wrapper {
-    max-width: 704px;
     padding: 80px 60px;
   }
 
@@ -92,6 +89,7 @@
   .about-text {
     font-size: 16px;
     line-height: 1.25;
+    max-width: 584px;
   }
 
   .about-list {
@@ -112,8 +110,8 @@
     padding-bottom: 100px;
   }
 
-  .about-wrapper {
-    max-width: 580px;
+  .about-img {
+    max-width: 530px;
   }
 
   .about-container {
@@ -133,6 +131,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
+    max-width: 460px;
   }
 
   .about-list {
