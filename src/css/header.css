@@ -38,7 +38,10 @@
   display: none;
 }
 
-/* Styles for Tablet devices */
+.header .footer-soc-list {
+  margin-bottom: unset;
+}
+
 @media only screen and (min-width: 768px) {
   .icon-menu {
     stroke-width: 3px;
@@ -58,7 +61,6 @@
   }
 }
 
-/* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .header-mob-menu {
     display: none;
@@ -242,7 +244,6 @@
 @media screen and (min-width: 768px) {
   .mob-menu {
     background-image: url(../img/modal/menu-tab-bg-min.jpg);
-    /* padding: 310px 101px 50px 101px; */
   }
 
   @media screen and (min-resolution: 2x) {
