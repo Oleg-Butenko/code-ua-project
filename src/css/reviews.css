@@ -78,6 +78,7 @@
   }
   .reviews-list {
     gap: 16px;
+    flex-wrap: nowrap;
   }
   .reviews-list-item {
     max-width: 344px;
