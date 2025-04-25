@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/code-ua-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-ua-project/assets/index-DKEEfXmT.css">
+    <link rel="stylesheet" crossorigin href="/code-ua-project/assets/index-Dss5QgQf.css">
   </head>
   <body>
     <header class="header">
@@ -420,10 +420,92 @@
   <div class="container"></div>
 </section>
 
-      <section class="contact-us">
-  <div class="container"></div>
+      <section class="contact-us" id="contact-us">
+  <div class="container contact-us">
+    <h2 class="contact-title">Contact Us</h2>
+    <div class="contact-wrapper">
+      <div class="contact">
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <div class="contact-field">
+            <label for="user-name" class="contact-label"></label>
+            <div class="input-wrap">
+              <input
+                name="user-name"
+                id="user-name"
+                class="contact-input contact-textarea"
+                placeholder="Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="user-email" class="contact-label"></label>
+            <div class="input-wrap">
+              <input
+                name="user-email"
+                id="user-email"
+                class="contact-input contact-textarea"
+                placeholder="Email"
+                pattern="([A-Za-z0-9_.-]+)@([A-Za-z0-9_.-]+)\.([A-Za-z]{2,8})"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="user-phone" class="contact-label"></label>
+            <div class="input-wrap">
+              <input
+                name="user-phone"
+                id="user-phone"
+                class="contact-input contact-textarea"
+                placeholder="+380"
+                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                required
+              />
+            </div>
+          </div>
+          <div class="comment-field">
+            <label for="user-comment" class="comment-label"></label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="comment-input comment-textarea"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+          <button type="submit" class="contact-btn">Send</button>
+        </form>
+      </div>
+      <div class="contact-pctr">
+        <picture class="contact-picture">
+          <source
+            srcset="/code-ua-project/assets/contact-us-desk-min-Chl2HQ9G.jpg 1x, /code-ua-project/assets/contact-us-desk@2x-min-C45NoGq6.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/code-ua-project/assets/contact-us-tab-min-D3bc8jAt.jpg 1x, /code-ua-project/assets/contact-us-tab@2x-min-By1JV9Mh.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/code-ua-project/assets/contact-us-mob-min-DeSeAdES.jpg 1x, /code-ua-project/assets/contact-us-mob@2x-min-NYWPqLiG.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="contact-img"
+            src="/code-ua-project/assets/contact-us-mob-min-DeSeAdES.jpg"
+            
+            alt="The Watch"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
 </section>
-
+<script src="main.js"></script>
     </main>
 
     <footer class="footer" id="footer">
