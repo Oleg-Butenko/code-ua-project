@@ -52,3 +52,34 @@ if (form) {
     }
   });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const openBtn = document.querySelector('.header-mob-menu');
+  const closeBtn = document.querySelector('.modal-close-btn');
+  const modalMenu = document.querySelector('.mob-menu');
+  const menuLinks = document.querySelectorAll('.mob-menu-link');
+
+  if (openBtn && closeBtn && modalMenu) {
+    openBtn.addEventListener('click', function (event) {
+      event.preventDefault(); // <-- Добавлено сюда
+      modalMenu.classList.add('is-open');
+    });
+
+    closeBtn.addEventListener('click', function () {
+      modalMenu.classList.remove('is-open');
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        modalMenu.classList.remove('is-open');
+
+        const targetId = link.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  }
+});
