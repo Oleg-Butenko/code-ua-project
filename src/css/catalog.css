@@ -33,29 +33,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 24px 28px;
 }
 
-.item-wrap {
-    display: flex;
-    padding: 28px 24px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .item-picture {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 18px 36px;
+    max-width: 208px;
+    margin-bottom: 28px;
 }
 
 .item-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-self: start;
-    gap: 8px;
+    width: 280px;
 }
 
 .item-name {
@@ -68,16 +60,17 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    max-width: 280px;
+
 }
 
 .item-price {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.28;
     letter-spacing: -0.02em;
     color: rgba(12, 12, 12, 0.5);
 }
+
 
 
 .catalog-item.catalog-hiden-items {
@@ -127,26 +120,27 @@
         gap: 32px 16px;
         margin-top: 40px;
         margin-bottom: 0;
+    }
 
+    .catalog-item,
+    .catalog-hiden-items {
+        max-width: calc((100% - 16px) / 2);
+        padding: 24px 32px;
     }
 
     .catalog-item.catalog-hiden-items {
-        border: 1px solid rgba(12, 12, 12, 0.05);
-        border-radius: 30px;
-        background: #f3f3f3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-basis: calc((100% - 16px) / 2);
+        display: block;
     }
 
+    .item-picture {
+        margin-bottom: 20px;
+        max-width: 268px;
+    }
 
     .item-name {
         font-size: 20px;
-        line-height: 1.25;
+        line-height: 1;
     }
-
-
 
     .Show-more-btn {
         display: none;
@@ -161,12 +155,22 @@
         padding-bottom: 100px;
     }
 
-    .catalog-list {}
-
-    .catalog-item {
+    .catalog-list {
         gap: 32px 23px;
+    }
+
+    .catalog-item,
+    .catalog-hiden-items {
         max-width: 368px;
         flex-basis: calc((100% - 32px) / 3);
     }
 
+    .item-picture {
+        max-width: 292px;
+        margin-bottom: 24px;
+    }
+
+    .item-info {
+        width: 304px;
+    }
 }
