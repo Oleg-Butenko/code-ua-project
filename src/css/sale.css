@@ -1,3 +1,5 @@
+/* BEGINNING */
+
 .sale-section {
   padding-bottom: 60px;
 }
@@ -33,15 +35,13 @@
   justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
-  flex-basis: calc((100% - 15px) / 4);
 }
 
 .sale-sub-container-two {
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
-  height: auto;
   width: 100%;
-  padding: 50px;
+  height: 385px;
   background-color: #f3f3f3;
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@
 .sale-sbc-three-header {
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: -0.02em;
   color: #fbfbfb;
   font-family: 'Gilroy', sans-serif;
@@ -69,7 +69,7 @@
 .sale-sbc-three-tag-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.5);
   font-family: 'Gilroy', sans-serif;
@@ -96,7 +96,7 @@
 .sale-sbc-three-price-two {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.7;
   letter-spacing: -0.02em;
   text-decoration: line-through;
   color: rgba(251, 251, 251, 0.5);
@@ -116,7 +116,7 @@
 .sale-sbc-three-main-text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.7);
   display: block;
@@ -132,13 +132,18 @@
 .sale-sbc-three-list-item {
   border: 1px solid rgba(251, 251, 251, 0.2);
   border-radius: 8px;
-  padding: 8px 12px;
+  height: 32px;
+  padding-right: 12px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sale-sbc-three-list-item-text {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.33333;
+  line-height: 1.33;
   color: #fbfbfb;
   font-family: 'Gilroy', sans-serif;
 }
@@ -155,6 +160,7 @@
   .sale-sbc-one-list-item {
     height: 80px;
     width: 80px;
+    padding: 0;
   }
 
   .sale-sub-container-two {
@@ -188,7 +194,7 @@
   .sale-header {
     margin-bottom: 40px;
     font-size: 48px;
-    line-height: 0.91667;
+    line-height: 0.92;
   }
 
   .sale-container {
@@ -209,12 +215,11 @@
   .sale-sbc-one-list-item {
     width: 132px;
     height: 132px;
-    padding: 16px 18px;
   }
 
   .sale-sub-container-two {
     max-width: 552px;
-    padding: 80px 112px;
+    height: auto;
   }
 
   .sale-sbc-two-img {
@@ -228,7 +233,10 @@
   }
 
   .sale-sbc-three-header {
-    max-width: 410px;
+    max-width: 389px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.13;
   }
 
   .sale-sbc-three-price-one {
@@ -242,9 +250,13 @@
     max-width: 584px;
   }
 
+  .sale-sbc-three-list-item {
+    height: 34px;
+  }
+
   .sale-sbc-three-list-item-text {
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.29;
   }
 
   .sale-sbc-three-list {
@@ -283,8 +295,6 @@
 
   .sale-sub-container-two {
     max-width: 428px;
-    height: 558px;
-    padding: 80px 50px;
     margin-right: 40px;
   }
 
