@@ -193,6 +193,11 @@
     margin-bottom: 32px;
   }
 
+   .contact-textarea {
+    height: 52px;
+    padding: 16px 18px;
+  }
+
   .contact {
     background: #f3f3f3;
     text-align: left;
@@ -225,10 +230,7 @@
     flex-direction: row;
     gap: 40px;
   }
-  .contact-textarea {
-    height: 52px;
-    padding: 16px 18px;
-  }
+ 
   .comment-textarea {
     padding: 16px 16px;
     height: 90px;
