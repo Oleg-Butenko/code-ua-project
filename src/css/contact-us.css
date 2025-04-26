@@ -1,11 +1,11 @@
 .contact-us {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .contact-title {
   font-weight: 600;
   font-size: 32px;
-
   line-height: 1;
   letter-spacing: -0.02em;
   color: #0c0c0c;
@@ -25,7 +25,6 @@
   border-radius: 30px;
   padding: 48px 28px;
   max-width: 375px;
-  height: 512px;
   background: #f3f3f3;
   text-align: left;
   margin-bottom: 20px;
@@ -98,9 +97,48 @@
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.input-wrap {
+  position: relative;
+}
 .contact-input:focus {
   border-color: #3350e9;
 }
+
+.contact-input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+.contact-input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+/* стилізація інформаційного текста при валідному значенні в інпуті */
+.contact-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+/* стилізація інформаційного текста при не валідному значенні в інпуті */
+.contact-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  position: absolute;
+  left: 5px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
 .contact-textarea {
   height: 42px;
   padding: 12px 14px;
@@ -133,7 +171,8 @@
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-btn:hover {
+.contact-btn:hover,
+.contact-btn:focus {
   background-color: #1f3cd4;
 }
 
@@ -144,7 +183,8 @@
 
 @media only screen and (min-width: 768px) {
   .contact-us {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
   .contact-title {
     margin-bottom: 40px;
@@ -183,7 +223,6 @@
     border-radius: 50px;
     padding: 50px 122px;
     min-width: 704px;
-    height: 100%;
   }
   .contact-btn {
     border-radius: 16px;
@@ -200,7 +239,8 @@
 
 @media only screen and (min-width: 1280px) {
   .contact-us {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .contact-wrapper {
@@ -228,16 +268,11 @@
     border-radius: 50px;
     padding: 50px 60px;
     min-width: 580px;
-    height: 556px;
   }
   .contact-btn {
     border-radius: 16px;
     padding: 17px 63px;
     width: 160px;
     height: 52px;
-  }
-  .contact-pctr {
-    margin-bottom: 0;
-    width: 1280px;
   }
 }

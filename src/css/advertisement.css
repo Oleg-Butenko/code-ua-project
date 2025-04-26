@@ -1,5 +1,6 @@
 .advertisement {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .advertisement-wrapper {
@@ -56,7 +57,8 @@
 
 @media only screen and (min-width: 768px) {
   .advertisement {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .advertisement-wrapper {
@@ -83,7 +85,8 @@
 
 @media only screen and (min-width: 1280px) {
   .advertisement {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .advertisement-wrapper {
