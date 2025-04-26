@@ -9,59 +9,64 @@
         </p>
         <form class="contact-form">
           <div class="contact-field">
-            <!-- <label for="user-name" class="contact-label"></label> -->
             <div class="input-wrap">
-              <input
-                name="user-name"
-                id="user-name"
-                class="contact-input contact-textarea"
-                placeholder="Name"
-                required
-              />
-              <p class="text-valid">Succes!</p>
-              <p class="text-invalid">Invalid name, try again</p>
+              <label for="user-name" class="contact-label">
+                <input
+                  name="user-name"
+                  id="user-name"
+                  class="contact-input contact-textarea"
+                  placeholder="Name"
+                  required
+                />
+
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid name, try again</p>
+              </label>
             </div>
           </div>
           <div class="contact-field">
-            <!-- <label for="user-email" class="contact-label"></label> -->
             <div class="input-wrap">
-              <input
-                name="user-email"
-                type="email"
-                id="user-email"
-                class="contact-input contact-textarea"
-                placeholder="Email"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                required
-              />
-              <p class="text-valid">Succes!</p>
-              <p class="text-invalid">Invalid email, try again</p>
+              <label for="user-email" class="contact-label">
+                <input
+                  name="user-email"
+                  type="email"
+                  id="user-email"
+                  class="contact-input contact-textarea"
+                  placeholder="Email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid email, try again</p>
+              </label>
             </div>
           </div>
           <div class="contact-field">
-            <!-- <label for="user-phone" class="contact-label"></label> -->
             <div class="input-wrap">
-              <input
-                name="user-phone"
-                id="user-phone"
-                type="tel"
-                class="contact-input contact-textarea"
-                placeholder="+380"
-                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-                required
-              />
-              <p class="text-valid">Succes!</p>
-              <p class="text-invalid">Invalid phone number, try again</p>
+              <label for="user-phone" class="contact-label">
+                <input
+                  name="user-phone"
+                  id="user-phone"
+                  type="tel"
+                  class="contact-input contact-textarea"
+                  placeholder="+380"
+                  pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                  required
+                />
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid phone number, try again</p>
+              </label>
             </div>
           </div>
           <div class="comment-field">
-            <!-- <label for="user-comment" class="comment-label"></label> -->
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              class="comment-input comment-textarea"
-              placeholder="Comment"
-            ></textarea>
+            <label for="user-comment" class="comment-label">
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="comment-input comment-textarea"
+                placeholder="Comment"
+              ></textarea>
+            </label>
           </div>
           <button type="submit" class="contact-btn">Send</button>
         </form>

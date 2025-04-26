@@ -37,14 +37,7 @@
 .comment-field {
   margin-bottom: 28px;
 }
-.comment-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
-}
+
 .comment-input:focus {
   border-color: #3350e9;
 }
@@ -75,15 +68,6 @@
   border-radius: 12px;
   padding: 12px 136px 54px 14px;
   height: 84px;
-}
-
-.contact-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  display: block;
-  margin-bottom: 4px;
 }
 
 .contact-input {
@@ -208,14 +192,7 @@
   .comment-field {
     margin-bottom: 32px;
   }
-  .contact-label {
-    font-weight: 400;
-    font-size: 16px;
 
-    line-height: 20px;
-    line-height: 1.25;
-    color: #0c0c0c;
-  }
   .contact {
     background: #f3f3f3;
     text-align: left;
