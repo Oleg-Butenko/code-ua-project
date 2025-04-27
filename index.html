@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/code-ua-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-ua-project/assets/index-CTqoZFYe.css">
+    <link rel="stylesheet" crossorigin href="/code-ua-project/assets/index-Dr7wE4-l.css">
   </head>
   <body>
     <header class="header">
@@ -268,7 +268,7 @@
 
       <section class="catalog">
   <div class="container">
-    <h3 id="catalog" class="catalog-title">Catalog</h3>
+    <h2 id="catalog" class="catalog-title">Catalog</h2>
     <ul class="catalog-list">
       <li class="catalog-item">
         <picture class="item-picture">
@@ -457,16 +457,14 @@
         unique. Time is your style, and we reveal it.
       </h3>
 
-      <div class="advertisement-buttons">
-        <a href="#contact-us" class="advertisement-btn">Contact Us</a>
-      </div>
+      <a href="#contact-us" class="advertisement-btn">Contact Us</a>
     </div>
   </div>
 </section>
 
       <section id="sale" class="sale-section">
   <div class="container">
-    <h1 class="sale-title">Sale</h1>
+    <h2 class="sale-title">Sale</h2>
     <div class="sale-content-wrap">
       <div class="sale-top-wrap">
         <ul class="sale-clock-list">
@@ -554,7 +552,9 @@
         </picture>
       </div>
       <div class="sale-bottom-wrap">
-        <h3 class="sale-subtitle">MARQ® Commander (Gen 2) - Carbon Edition</h3>
+        <h3 class="sale-subtitle">
+          MARQ&reg; Commander (Gen 2) - Carbon Edition
+        </h3>
         <p class="sale-top-text">Product tag: 706587</p>
         <div class="sale-price-wrap">
           <div class="sale-price-btn">
@@ -667,80 +667,91 @@
         </p>
         <form class="contact-form">
           <div class="contact-field">
-            <label for="user-name" class="contact-label"></label>
             <div class="input-wrap">
-              <input
-                name="user-name"
-                id="user-name"
-                class="contact-input contact-textarea"
-                placeholder="Name"
-                required
-              />
+              <label for="user-name" class="contact-label">
+                <input
+                  name="user-name"
+                  id="user-name"
+                  class="contact-input contact-textarea"
+                  placeholder="Name"
+                  required
+                />
+
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid name, try again</p>
+              </label>
             </div>
           </div>
           <div class="contact-field">
-            <label for="user-email" class="contact-label"></label>
             <div class="input-wrap">
-              <input
-                name="user-email"
-                id="user-email"
-                class="contact-input contact-textarea"
-                placeholder="Email"
-                pattern="([A-Za-z0-9_.-]+)@([A-Za-z0-9_.-]+)\.([A-Za-z]{2,8})"
-                required
-              />
+              <label for="user-email" class="contact-label">
+                <input
+                  name="user-email"
+                  type="email"
+                  id="user-email"
+                  class="contact-input contact-textarea"
+                  placeholder="Email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid email, try again</p>
+              </label>
             </div>
           </div>
           <div class="contact-field">
-            <label for="user-phone" class="contact-label"></label>
             <div class="input-wrap">
-              <input
-                name="user-phone"
-                id="user-phone"
-                class="contact-input contact-textarea"
-                placeholder="+380"
-                pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-                required
-              />
+              <label for="user-phone" class="contact-label">
+                <input
+                  name="user-phone"
+                  id="user-phone"
+                  type="tel"
+                  class="contact-input contact-textarea"
+                  placeholder="+380"
+                  pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
+                  required
+                />
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid phone number, try again</p>
+              </label>
             </div>
           </div>
           <div class="comment-field">
-            <label for="user-comment" class="comment-label"></label>
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              class="comment-input comment-textarea"
-              placeholder="Comment"
-            ></textarea>
+            <label for="user-comment" class="comment-label">
+              <textarea
+                name="user-comment"
+                id="user-comment"
+                class="comment-input comment-textarea"
+                placeholder="Comment"
+              ></textarea>
+            </label>
           </div>
           <button type="submit" class="contact-btn">Send</button>
         </form>
       </div>
-      <div class="contact-pctr">
-        <picture class="contact-picture">
-          <source
-            srcset="/code-ua-project/assets/contact-us-desk-min-Chl2HQ9G.jpg 1x, /code-ua-project/assets/contact-us-desk@2x-min-C45NoGq6.jpg 2x"
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="/code-ua-project/assets/contact-us-tab-min-D3bc8jAt.jpg 1x, /code-ua-project/assets/contact-us-tab@2x-min-By1JV9Mh.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="/code-ua-project/assets/contact-us-mob-min-DeSeAdES.jpg 1x, /code-ua-project/assets/contact-us-mob@2x-min-NYWPqLiG.jpg 2x"
-            media="(max-width: 768px)"
-          />
-          <img
-            class="contact-img"
-            src="/code-ua-project/assets/contact-us-mob-min-DeSeAdES.jpg"
-            alt="The Watch"
-          />
-        </picture>
-      </div>
+
+      <picture class="contact-picture">
+        <source
+          srcset="/code-ua-project/assets/contact-us-desk-min-Chl2HQ9G.jpg 1x, /code-ua-project/assets/contact-us-desk@2x-min-C45NoGq6.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/code-ua-project/assets/contact-us-tab-min-D3bc8jAt.jpg 1x, /code-ua-project/assets/contact-us-tab@2x-min-By1JV9Mh.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/code-ua-project/assets/contact-us-mob-min-DeSeAdES.jpg 1x, /code-ua-project/assets/contact-us-mob@2x-min-NYWPqLiG.jpg 2x"
+          media="(max-width: 768px)"
+        />
+        <img
+          class="contact-img"
+          src="/code-ua-project/assets/contact-us-mob-min-DeSeAdES.jpg"
+          alt="The Watch"
+        />
+      </picture>
     </div>
   </div>
 </section>
-<script src="main.js"></script>
 
     </main>
 
@@ -818,13 +829,17 @@
             </li>
           </ul>
         </nav>
-        <p class="footer-navigation-text">
+        <a
+          href="https://www.google.com/maps/place/Varex+Imaging+Visitor+Entrance/@40.7331327,-111.961614,18z/data=!4m6!3m5!1s0x8752f35bbcfb1369:0x260ab4842496c9e4!8m2!3d40.7332053!4d-111.9591313!16s%2Fg%2F1tcxvqmt?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
+          class="footer-navigation-text"
+          target="_blank"
+        >
           1678 S. Pioneer Road Salt Lake City UT 84104
-        </p>
+        </a>
       </div>
       <div class="footer-bottom-wrap">
         <p class="footer-bottom-text">
-          ©2023 The Watch Spot. All rights reserved.
+          &copy;2023 The Watch Spot. All rights reserved.
         </p>
         <ul class="footer-bottom-list">
           <li class="footer-bottom-item">
