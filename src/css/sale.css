@@ -1,7 +1,8 @@
 /* BEGINNING */
 
 .sale-section {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .sale-header {
@@ -188,7 +189,8 @@
 
 @media screen and (min-width: 768px) {
   .sale-section {
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .sale-header {
@@ -282,7 +284,8 @@
 
 @media screen and (min-width: 1280px) {
   .sale-section {
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .sale-container {
