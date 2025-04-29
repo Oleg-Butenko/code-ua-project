@@ -77,7 +77,7 @@
     display: none;
 }
 
-.Show-more-btn {
+.show-more-btn {
     border: 0;
     font-weight: 500;
     font-size: 14px;
@@ -96,8 +96,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.Show-more-btn:hover,
-.Show-more-btn:focus {
+.show-more-btn:hover,
+.show-more-btn:focus {
     background-color: #1f3cd4;
 }
 
@@ -142,7 +142,7 @@
         line-height: 1;
     }
 
-    .Show-more-btn {
+    .show-more-btn {
         display: none;
     }
 }
